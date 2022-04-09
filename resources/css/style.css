@@ -35,11 +35,6 @@ html, body {
     width: 100%;
 }
 
-@media only screen and (max-width: 760px) {
-    .main-content {
-        top: 3rem;
-    }
-}
 
 /* Header */
 
@@ -91,49 +86,6 @@ header .tablet {
     display: none;
 }
 
-@media only screen and (max-width: 760px) {
-    header .desktop {
-        display: none;
-    }
-
-    header .tablet {
-        display: block;
-        width: 100%;
-    }
-
-    header .mobile {
-        display: none;
-    }
-
-    header .content {
-        display: flex;
-        height: 3rem;
-        justify-content: space-between;
-        padding: .5rem 0;
-    }
-
-    header .logo {
-        padding-left: 1.5rem;
-    }
-
-    header .tablet ul {
-        align-items: center;
-        display: flex;
-        justify-content: end;
-        /*width: 100%;*/
-    }
-
-    header .tablet li {
-        padding: 0 1rem;
-    }
-
-    header .tablet .button {
-        background-color: #9DC20B;
-        color: white;
-        line-height: 1.6;
-        padding: .1875rem .5rem;
-    }
-}
 
 /* Sign Up Section */
 
@@ -200,52 +152,6 @@ header .tablet {
     padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
-    #sign-up-section {
-        height: 28rem;
-        justify-content: center;
-        padding: 0;
-    }
-
-    #sign-up-cta {
-        background-color: transparent;
-        border: none;
-        height: auto;
-        padding-bottom: 0;
-        position: static;
-        width: auto;
-    }
-
-    #sign-up-cta .content {
-        margin-top: 0;
-    }
-
-    #sign-up-cta .email {
-        display: none;
-    }
-
-    #sign-up-cta h1 {
-        font-size: 3.125rem;
-    }
-
-    #sign-up-cta h2 {
-        font-size: 2.25rem;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    #sign-up-section {
-        height: 20rem;
-    }
-
-    #sign-up-cta h1 {
-        font-size: 2.25rem;
-    }
-
-    #sign-up-cta h2 {
-        font-size: 2rem;
-    }
-}
 
 /* Features Section */
 
@@ -271,8 +177,7 @@ header .tablet {
 
 .feature .content {
     box-sizing: border-box;
-    min-height: 11.6875rem;
-    padding-top: 2.5rem;
+    padding: 2.5rem 0;
 }
 
 .feature h2 {
@@ -288,35 +193,6 @@ header .tablet {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.2;
-}
-
-@media only screen and (max-width: 890px) {
-    .feature h2 {
-        font-size: 1.125rem;
-        font-weight: normal;
-        line-height: 1.3;
-    }
-
-    .feature h3 {
-        font-size: .875rem;
-        line-height: 1.4;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    #features-section {
-        flex-flow: row;
-        padding: 1rem 1rem;
-    }
-
-    .feature {
-        margin: .5rem;
-        padding: 1.25rem 1rem 0 1rem;
-    }
-
-    .feature .content {
-        min-height: 10rem;
-    }
 }
 
 /* Filters Section */
@@ -350,37 +226,6 @@ header .tablet {
     padding: 0 1%;
 }
 
-@media only screen and (max-width: 760px) {
-    #filters-section {
-        padding: 0;
-    }
-
-    #filters-section .content {
-        margin: 0;
-        padding: 3rem;
-    }
-
-    #filters-section .content h2 {
-        font-size: 2.2rem;
-        font-weight: bold;
-        line-height: 1;
-        padding-bottom: .4rem;
-    }
-
-    #filters-section .content h3 {
-        font-size: .875rem;
-        line-height: 1.4;
-    }
-
-    #filters-section .images-container {
-        padding: 0;
-        width: 100%;
-    }
-
-    #filters-section .extra {
-        /*display: none;*/
-    }
-}
 
 /* Quotes Section */
 
@@ -389,7 +234,9 @@ header .tablet {
 }
 
 #quotes-section .content {
-    padding: 5rem 0;
+    align-items: center;
+    display: flex;
+    padding: 5rem 2rem;
 }
 
 #quotes-section .quote {
@@ -405,27 +252,6 @@ header .tablet {
     height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
-    #quotes-section .content {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding: 2.5rem 0;
-        width: 100%;
-    }
-
-    #quotes-section .quote {
-        font-size: 1.5rem;
-        text-align: left;
-        line-height: 1.2;
-        padding-left: 2rem;
-    }
-
-    #quotes-section .quote-citation {
-        display: block;
-        padding-right: 2rem;
-    }
-}
 
 /* Footer */
 
@@ -453,8 +279,309 @@ footer .location {
     font-size: 0.75rem;
 }
 
+@media only screen and (max-width: 760px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .tablet {
+        display: block;
+        width: 100%;
+    }
+
+    header .mobile {
+        display: none;
+    }
+
+    header .content {
+        display: flex;
+        height: 3rem;
+        justify-content: space-between;
+        padding: .5rem 0;
+    }
+
+    header .logo {
+        padding-left: 1.5rem;
+    }
+
+    header .tablet ul {
+        align-items: center;
+        display: flex;
+        justify-content: end;
+    }
+
+    header .tablet li {
+        padding: 0 1rem;
+    }
+
+    header .tablet .button {
+        background-color: #9DC20B;
+        color: white;
+        line-height: 1.6;
+        padding: .1875rem .5rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .main-content {
+        top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #sign-up-section {
+        height: 28rem;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #sign-up-cta {
+        background-color: transparent;
+        border: none;
+        height: auto;
+        padding: 0;
+        position: static;
+        width: auto;
+    }
+
+    #sign-up-cta .content {
+        margin-top: 0;
+    }
+
+    #sign-up-cta .email {
+        display: none;
+    }
+
+    #sign-up-cta h1 {
+        font-size: 3.125rem;
+    }
+
+    #sign-up-cta h2 {
+        font-size: 2.25rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #features-section {
+        flex-direction: row;
+        padding: 1rem 1rem;
+    }
+
+    .feature {
+        margin: .5rem;
+        padding: 1.25rem 1rem 0 1rem;
+    }
+
+    .feature h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #filters-section {
+        padding: 0;
+    }
+
+    #filters-section .content {
+        margin: 0;
+        padding: 3rem;
+    }
+
+    #filters-section .content h2 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        line-height: 1;
+        padding-bottom: .4rem;
+    }
+
+    #filters-section .content h3 {
+        font-size: .875rem;
+        line-height: 1.4;
+    }
+
+    #filters-section .images-container {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #quotes-section .content {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 2.5rem 0;
+        width: 100%;
+    }
+
+    #quotes-section .quote {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        padding-left: 2rem;
+        text-align: left;
+    }
+
+    #quotes-section .quote-citation {
+        display: block;
+        padding-right: 2rem;
+    }
+}
+
 @media only screen and (min-width: 760px) {
     footer .content {
         font-size: .625rem;
     }
+}
+
+@media only screen and (max-width: 630px) {
+    .logo {
+        display: none;
+    }
+
+    header .tablet ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .tablet {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .content {
+        display: flex;
+        height: 3rem;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile li {
+        padding: 0 1rem;
+    }
+
+    .mobile ul li a img {
+        vertical-align: middle;
+    }
+
+    .mobile .button {
+        background-color: #9DC20B;
+        color: white;
+        line-height: 1.6;
+        padding: .1875rem .5rem;
+    }
+
+    .mobile li:nth-of-type(4) {
+        padding-left: 0;
+    }
+
+    #sign-up-section {
+        display: flex;
+        height: 20rem;
+    }
+
+    #sign-up-cta .content {
+        width: 100%;
+    }
+
+    #sign-up-cta h1 {
+        font-size: 2.25rem;
+        padding: 0 2rem;
+    }
+
+    #sign-up-cta h2 {
+        font-size: 2rem;
+    }
+
+    #features-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .feature .content {
+        box-sizing: border-box;
+        padding: 1.5rem 0 0;
+    }
+
+    .feature {
+        margin: 0;
+        padding: 1rem 1rem 1.875rem;
+    }
+
+    .feature h2 {
+        color: #4A4A4A;
+        font-size: 1.125rem;
+        font-weight: bold;
+        line-height: 1.3;
+        padding-bottom: .5rem;
+    }
+
+    .feature h3 {
+        color: #4A4A4A;
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+
+    #filters-section .extra {
+        display: none;
+    }
+
+    #filters-section .content h2 {
+        font-size: 1.125rem;
+        padding-bottom: 1.2rem;
+    }
+
+    #filters-section .content {
+        padding: 1.5rem;
+    }
+
+    #filters-section .content h3 {
+        font-size: 0.875rem;
+    }
+
+    #quotes-section .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #quotes-section .quote {
+        padding-bottom: 1rem;
+    }
+
+    #quotes-section .quote-citation {
+        padding: 0;
+    }
+
+    footer .content {
+        color: white;
+        display: flex;
+    }
+
+    footer .copyright, footer .location {
+        font-size: 0.625rem;
+    }
+
 }
